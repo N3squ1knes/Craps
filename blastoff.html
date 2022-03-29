@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <!--
+        tagsV1.html this is a file to test the use of tags in html as well as 
+        some beginning javascript functions. 
+        The javascript functions tested are document.write() and alert().
+        written by Nestor Hernandez
+        nesherna@uat.edu
+    -->
+
+    <head>
+        <script src="craps.js"></script>
+        <script src="blastoff.js"></script>
+        <Title>
+            Nestor Hernandez's UATSpace Page
+        </Title>
+    </head>
+
+    <body>
+        <img src="UATspaceLogo-1.jpg">
+        <h1>
+            <font face="Times New Roman" size="20 px" color="#00fff">UAT Space Program</font>
+        </h1>
+ 
+         <script>
+            //The document.write prints the text on the main body of the webpage.
+             document.write("This is a test of the docutment.write function");
+
+              /*
+            The alert function opens an alert window. The text within the alert window originates 
+            from inside the parenthesis.
+            */
+            //var alertText = "This is a test of the alert function(). It is stored within the alertText variable"
+            //alert("This is test for the alert fucntion.");
+        </script>
+ 
+        <p>
+            This is a test for paragraph tags. A paragraph is more than one sentence. This is a paragraph
+        </p>
+        <br>
+        <br>
+        <div id="blastOffText"><font face="Ariel" size="50 px" color="#00008b">Blastoff status will be presented here</font></div>
+        <br>
+        <button onclick="testCtnDown();">
+            Start
+        </button>
+   
+        <button>
+            Stop
+        </button>
+
+        <br>
+        <br>
+        <h2>Let's Play Craps!!!</h2>
+        <div id="crapsRes">Craps Results</div>
+        <div id="die1Res">Result for die1</div>
+        <div id="die2Res">Result for die2</div>
+        <div id="sumRes">Sum of the two dice</div>
+        <div id="Lose">Losses</div>
+        <div id="Wins">Wins</div>
+        <div id="Ties">Ties</div>
+        <br>
+        <button onClick="playCraps();">Play Craps</button>
+        
+    </body>
+</html>
